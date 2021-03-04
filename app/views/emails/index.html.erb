@@ -3,19 +3,19 @@
   <div class="mail-headers row border d-flex p-3">
     <h4>Boîte de réception</h4>
     
-<%= link_to 'Recevoir un email', emails_path, class: "btn btn-primary offset-sm-9", method: "post", remote: true%>
-
 <div class="container">
 
 <div class="row">
-    <div class="col"> <b>Liste des emails</b>
-       	
+  <%= link_to 'Recevoir un email', emails_path, class: "btn btn-primary offset-sm-9", method: :post, remote: true%>
+
+    <div class="col"> <h3>Liste des emails</h3>
+        
         <table class="table table-hover m-0">
           <tbody id="emails">
-
           <ul>
           <% @emails.each do |email| %>
-          <%= render 'email_list', email: email  %>
+          <li id="delete-<%= email.id %>"> <a href="<%= email_path(id: email.id)%>" data-remote="true"><%=email.object%></a>
+          </li>
           <% end %>
          </ul>
 
@@ -23,8 +23,12 @@
       </table>
 </div>
 
-    <div class="col"> <b>Email selectionné</b>
+<div class="col"><h3 id="email_show"> Email selectionné</h3>
+  
+      <ul class="list-group list-group-flush">
+      </ul>
+ 
 
-		</div>
-	</div>
+    </div>
+  </div>
 </div>

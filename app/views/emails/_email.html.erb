@@ -1,3 +1,7 @@
-<li id="<%= @email.id%>">
-  <%= link_to @email.object, show_email_path(@email), remote: true %>
-</li>
+<ul class="email-line" id="<%= email.id %>">
+
+	<li class="email" id="email-<%= email.id %>">
+		<a href="<%= email_path(email.id)%>" data-remote="true"><%=email.object%></a>
+	</li>
+	
+</ul>

@@ -1,8 +1,1 @@
-  
-$(document).ready(function() {
-
-  $('#<%=@email.id%>').removeClass('font-weight-bold'); 
-  $('#content-child').remove();
-  $('#mail-display').append("<%= j render 'show',email: @email %>");
-
-});
+document.getElementById("email_show").insertAdjacentHTML("beforeend", "<%= j render 'show', email: @email %>");

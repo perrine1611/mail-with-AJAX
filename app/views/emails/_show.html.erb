@@ -1,0 +1,9 @@
+<div id="delete-<%= email.id %>">
+<br>
+<br>
+<h1> <%= @email.object %></h1>
+<br>
+	<p><%= @email.body %></p>
+	<%= link_to 'Supprimer', email_path(id: email.id), class:"btn btn-danger", data: {:confirm => 'Es tu sûr ?'}, method: :delete, remote:true%>
+	<a type="button" class="btn btn-primary"> Marquer comme lu </a>
+</div>
