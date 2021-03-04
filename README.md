@@ -1,26 +1,7 @@
-# README
+# Projet : Gmail-like en AJAX
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Pour ce projet, nous allons te demander de faire un Email Viewer qui n'est ni plus ni moins qu'une version ultra basique de Gmail. Globalement l'appli affichera une seule et unique page avec 2 colonnes.
 
-Things you may want to cover:
+## Réalisation des niveaux 1 et 2 
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-Heroku : https://blooming-depths-53222.herokuapp.com/
+[Lien Heroku](https://blooming-depths-53222.herokuapp.com/)
