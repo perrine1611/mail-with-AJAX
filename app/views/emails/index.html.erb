@@ -1,0 +1,30 @@
+
+<div class="container mail-container border">
+  <div class="mail-headers row border d-flex p-3">
+    <h4>Boîte de réception</h4>
+    
+<%= link_to 'Recevoir un email', emails_path, class: "btn btn-primary offset-sm-9", method: "post", remote: true%>
+
+<div class="container">
+
+<div class="row">
+    <div class="col"> <b>Liste des emails</b>
+       	
+        <table class="table table-hover m-0">
+          <tbody id="emails">
+
+          <ul>
+          <% @emails.each do |email| %>
+          <%= render 'email_list', email: email  %>
+          <% end %>
+         </ul>
+
+        </tbody>
+      </table>
+</div>
+
+    <div class="col"> <b>Email selectionné</b>
+
+		</div>
+	</div>
+</div>

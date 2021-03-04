@@ -1,0 +1,10 @@
+document.getElementById("emails").insertAdjacentHTML("afterbegin", "<%= j render 'email_list', email: @email %>");
+
+$(".email_list").click(function(){
+	let url = "emails/" + this.id
+	$.ajax({
+	    url: url,
+	    type: "GET",
+	    dataType : 'script', 
+	});
+})
