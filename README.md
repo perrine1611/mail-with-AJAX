@@ -38,7 +38,7 @@ Ce que contient la **version finale** :
 
 ## Détail des fonctionnalités
 
-**Barre de recherche**
+- **Barre de recherche**
 
 * Possibilité de filtrer par catégorie et/ou par localisation
 * Auto-complétion pour la ville.
