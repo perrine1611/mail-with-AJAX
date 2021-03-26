@@ -23,6 +23,10 @@ STUDIO est un projet ayant pour but de **valoriser et développer les pratiques 
 
 [STUDIO](https://studiofinalproject.herokuapp.com/)
 
+## Lien du Kit UI
+
+[Kit UI STUDIO](https://m-tessier.github.io/Kit-UI-STUDIO/)
+
 ## La version finale
 
 Ce que contient la **version finale** :
@@ -32,13 +36,14 @@ Ce que contient la **version finale** :
 * Base de données
 * Barre de recherche fonctionnelle avec auto-complétion
 * Localisation des espaces sur une carte (API Leaflet)
+* Réservation d'un espace et paiement (API Stripe)
 * Mailing automatique (API Mailjet)
 * Messagerie 
 * Commentaires
 
 ## Détail des fonctionnalités
 
-- **Barre de recherche**
+**Barre de recherche**
 
 * Possibilité de filtrer par catégorie et/ou par localisation
 * Auto-complétion pour la ville.
